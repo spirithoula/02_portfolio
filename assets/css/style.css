@@ -1,0 +1,33 @@
+nav {
+    background-color: grey;
+}
+
+main {
+    background-color: azure;
+}
+
+#hero {
+    background-color: rgb(209, 222, 223);
+}
+
+#about-me {
+    background-color: rgb(139, 155, 141);
+}
+
+#projects {
+    background-color: cornflowerblue;
+}
+
+#contact-me {
+    background-color: cadetblue;
+}
+
+footer {
+    background-color: grey;
+}
+
+@media screen and (min-width: 768px) {
+    #hero {
+        background-color: honeydew;
+    } 
+}
