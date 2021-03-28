@@ -1,33 +1,63 @@
-nav {
-    background-color: grey;
+:root{
+    --color:  rgb(199, 198, 198);
+    --page-margin: 0.2rem;
+    --serif: sans-serif
+    --border: 2px
 }
 
-main {
-    background-color: azure;
+html {
+    background-color: rgb(199, 198, 198);
+    font-size: 16px;
 }
 
-#hero {
-    background-color: rgb(209, 222, 223);
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    color: #fff;
+    font-family: var(--serif);
 }
 
-#about-me {
-    background-color: rgb(139, 155, 141);
+header {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1rem;
 }
 
-#projects {
-    background-color: cornflowerblue;
+header > nav > ul {
+    list-style-type: none;
+    display: inline-flex;
 }
 
+header > nav > ul > li::after{
+    content: '|';
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: white;
+}
+
+header > nav > ul > li:last-child::after {
+    content: unset;
+    margin-right: unset;
+}
+
+#about-me,
+#projects,
 #contact-me {
-    background-color: cadetblue;
+    padding: 2rem;
 }
 
-footer {
-    background-color: grey;
+#about-me img {
+    margin: 0 auto;
+    position: relative;
 }
 
-@media screen and (min-width: 768px) {
-    #hero {
-        background-color: honeydew;
-    } 
+#about-me h2,
+#projects h2,
+#contact-me h2, {
+    border-bottom: var(--border);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
 }
