@@ -1,12 +1,12 @@
 :root{
-    --color:  rgb(199, 198, 198);
+    --color:  rgb(9, 24, 53);
     --page-margin: 0.2rem;
     --serif: sans-serif
     --border: 2px
 }
 
 html {
-    background-color: rgb(199, 198, 198);
+    background-color: rgb(9, 24, 53);
     font-size: 16px;
 }
 
@@ -56,8 +56,15 @@ header > nav > ul > li:last-child::after {
 
 #about-me h2,
 #projects h2,
-#contact-me h2, {
+#contact-me h2 {
     border-bottom: var(--border);
     letter-spacing: 0.25rem;
     text-transform: uppercase;
+}
+
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
 }
